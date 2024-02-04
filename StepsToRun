@@ -1,0 +1,57 @@
+# Step 1: Download Docker Image from Docker Hub
+docker pull jalsa797/product-mongo
+
+# Step 2: Run Docker Container
+docker run -d -p 8080:8080 --name productsmongo-app jalsa797/product-mongo
+
+# Explanation:
+# -d: Run the container in the background.
+# -p 8080:8080: Map port 8080 on the host to port 8080 on the container.
+# --name productsmongo-app: Assign a name to the container.
+
+# Step 3: Build Docker Image for Java Spring Boot Application
+# Assuming you have a Dockerfile in your project directory
+
+# Navigate to the directory containing your Dockerfile
+cd /path/to/your/project
+
+# Build the Docker image
+docker build -t productsmongo-image .
+
+# Run Docker Container from Built Image
+docker run -d -p 8080:8080 --name productsmongo-app productsmongo-image
+
+# Additional Steps:
+
+# Step 4: View Running Containers
+docker ps
+
+# Explanation:
+# Lists all running containers along with their details.
+
+# Step 5: Access Logs of a Running Container
+docker logs productsmongo-app
+
+# Explanation:
+# Displays logs of the running container named 'productsmongo-app'.
+
+# Step 6: Stop and Remove a Running Container
+docker stop productsmongo-app
+docker rm productsmongo-app
+
+# Explanation:
+# Stops and removes the container named 'productsmongo-app'.
+
+# Step 7: Push Docker Image to Docker Hub
+docker push productsmongo-image
+
+# Explanation:
+# Pushes the Docker image to the Docker Hub repository.
+
+# Step 8: Clean Up Docker Images
+docker rmi productsmongo-image
+docker image prune -a
+
+# Explanation:
+# - rmi: Removes the specified Docker image.
+# - image prune -a: Removes all unused Docker images.
