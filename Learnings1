@@ -1,1 +1,24 @@
 Docker is a platform for developing, shipping, and running applications in containers. 
+
+
+why docker?
+
+Imagine Docker as a Lunchbox:
+
+Without Docker (Traditional Lunchbox):
+
+Each day, you pack your lunch in a different kind of lunchbox (representing different servers or environments).
+Sometimes, your sandwich doesn't fit, or your drink spills because the lunchbox sizes and shapes vary.
+It takes time to adjust and make sure everything fits just right.
+With Docker (Magic Lunchbox):
+
+You have a magical lunchbox that can hold your sandwich, drink, and snacks all in one neat package.
+No matter where you go — school, a friend's house, or a picnic — your lunch always fits perfectly in the same magic lunchbox.
+No spills, no adjusting, it just works like magic!
+Explanation:
+
+Traditional Lunchbox: Different servers or environments have different requirements (like different-sized lunchboxes), making it tricky to pack and carry your lunch (deploy your app).
+
+Docker (Magic Lunchbox): Docker creates a magical lunchbox (a container) that holds everything your app needs. It fits perfectly everywhere, making it super easy to take your lunch (deploy your app) to school, a friend's house, or a picnic (different servers or environments).
+
+So, Docker is like a magic lunchbox that makes sure your lunch (app) is always ready to go, no matter where you want to enjoy it!
